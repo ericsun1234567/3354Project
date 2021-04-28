@@ -2,212 +2,202 @@
 
 <html>
 <head>
-<style>
+    <style>
 
-body {
-margin: 0;
-margin-top: 50px;
-font-family: sans-serif;
-}
-
-
-
-header {
-display: flex;
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-height: 50px;
-line-height: 50px;
-background-color: #6495ED;
-
-}
+        body {
+            margin: 0;
+            margin-top: 50px;
+            font-family: sans-serif;
+            background-color: darkslateblue;
+        }
 
 
 
-header * {
-display: inline;
-height: 50px;
-
-}
-
-
-
-headerul {
-padding: 40;
-}
-
-
-
-header li {
-margin-left: 50px;
-}
+        header {
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            line-height: 50px;
+            background-color: #6495ED;
+        }
 
 
 
-section {
-height: 100vh;
-border: 1px solid black;
-display: flex;
-
-justify-content: center;
-
-align-items: center;
-
-text-align: left;
+            header * {
+                display: inline;
+                height: 50px;
+            }
 
 
 
-background-size: cover; /* Add this line */
-
-background-position: center center; /* Add this line */
-
-background-repeat: no-repeat; /* Add this line */
-
-background-attachment: fixed; /* Add this line */
-
-}
+        headerul {
+            padding: 40;
+        }
 
 
 
-#hero .profile-img {
-
-width: 300px;
-
-border-radius: 50%;
-
-}
+        header li {
+            margin-left: 50px;
+        }
 
 
 
-footer {
+        section {
+            height: 100vh;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            background-size: cover; /* Add this line */
+            background-position: center center; /* Add this line */
+            background-repeat: no-repeat; /* Add this line */
+            background-attachment: fixed; /* Add this line */
+        }
 
-text-align: right;
-padding: 50px;
+        #hero .profile-img {
+            width: 300px;
+            border-radius: 50%;
+        }
 
-}
+        footer {
+            text-align: right;
+            padding: 50px;
+            background-color: #6495ED;
+        }
 
+        #hero h1 {
+            font-size: 3em;
+        }
 
-#hero h1 {
-font-size: 3em;
-}
+        header a {
+            text-decoration: none;
+            color: black;
+        }
 
+        form {
+            background-color: #4654e1;
+            width: 300px;
+            height: 44px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
 
-section h2 {
-font-size: 2.5em;
-}
+        input {
+            all: unset;
+            font: 16px system-ui;
+            color: #fff;
+            height: 100%;
+            width: 100%;
+            padding: 6px 10px;
+        }
 
+        ::placeholder {
+            color: #fff;
+            opacity: 0.7;
+        }
 
-section h3 {
-font-size: 1.5em;
-}
+        svg {
+            color: #fff;
+            fill: currentColor;
+            width: 24px;
+            height: 24px;
+            padding: 10px;
+        }
 
+        button {
+            all: unset;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+        }
 
+        p {
+        }
+    </style>
 
-header a {
-
-text-decoration: none;
-
-color: black;
-
-}
-
-
-
-</style>
-
-<title>EXPLORE</title>
-<link rel=”stylesheet” href=”style.css”>
+    <title>EXPLORE</title>
+    <link rel=”stylesheet” href=”style.css”>
 </head>
 <body>
-<header>
+    <header>
 
-<img src=”https://www.clipartkey.com/mpngs/m/61-610521_outline-of-a-dog-clipart-png-download-chihuahua.png” class=”profile-img”>
+        <img src='dog.jpg' width="50" height="581">
 
-<nav>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="contactvet.html">Contact Vet</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
 
-<ul>
-<li><a href="3354project.html">Home</a></li>
-<li><a href="explore.html">Explore</a></li>
-<li><a href="profile.html">Profile</a></li>
-<li><a href="contactvet.html">Contact Vet</a></li>
-</ul>
+        </nav>
 
-</nav>
+    </header>
 
-</header>
+    <main>
 
-<main>
+        <section id=”hero”>
 
-<section id=”hero”>
-
-<div class=”section-inner”>
+            <div class=”section-inner”>
 
 
 
-<h1>EXPLORE</h1>
+                <h1>EXPLORE</h1>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/I4KCmFfVm34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+                <form role="search" id="form">
+                    <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+                    <button>
+                        <svg viewBox="0 0 1024 1024">
+                            <path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118
+                                           55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294
+                                           0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529
+                                           79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.
+                                           455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455
+                                           218.455z">
+                            </path>
+                        </svg>
+                    </button>
+                </form>
+                <script>
+                    const f = document.getElementById('form');
+                    const q = document.getElementById('query');
+                    const google = 'https://www.google.com/search?q=site%3A+';
+                    const site = 'PetCare.com';
 
-</section>
+                    function submitted(event) {
+                        event.preventDefault();
+                        const url = google + site + '+' + q.value;
+                        const win = window.open(url, '_blank');
+                        win.focus();
+                    }
 
-<section id=”about”>
+                    f.addEventListener('submit', submitted);
+                </script>
 
-<div class=”section-inner”>
+                <p>
+                    To keep you busy:<br />
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/I4KCmFfVm34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </p>
+            </div>
 
-<h2>About Us</h2>
+        </section>
 
-<p>Noticing that there aren't many avenues or apps on the market for pet owners to receive helpful tidbits and communication, PetCare was born.</p>
+    </main>
 
-<h3>Our Purpose</h3>
 
-<ul>
+    <footer>
 
-<li>Create a community for pet owners.</li>
+        © Copyright PetCare, 2021
 
-<li>Provide lifestyle suggestions to keep a pet healthy.</li>
-
-<li>Facilitate communication between pet owners and qualified veterinarians.</li>
-
-</ul>
-
-</div>
-
-</section>
-
-<section id=”contact”>
-
-<div class=”section-inner”>
-
-<h2>Contact Us</h2>
-
-<p>You can find us on:</p>
-
-<ul>
-
-<li><a href=”“>Twitter</a></li>
-
-<li><a href=”“>Facebook</a></li>
-
-<li><a href=”“>Instagram</a></li>
-
-</ul>
-
-<p>Or, send us an email on <a href=”mailto:webcode@gmail.com“></a>.</p>
-
-</div>
-
-</section>
-
-</main>
-
-<footer>
-
-© Copyright PetCare, 2021
-
-</footer>
+    </footer>
 
 </body>
 
